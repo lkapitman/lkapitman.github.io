@@ -1,1 +1,291 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<script type="text/javascript" src="https://raw.githubusercontent.com/flouthoc/blinkTitle.js/master/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background: #000000;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flip {
+  position: absolute;
+  width: 160px;
+  height: 48px;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  -ms-perspective: 500px;
+  perspective: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -80px;
+}
+.flip a {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.flip a .front,
+.flip a .back {
+  margin: 0;
+  width: 160px;
+  height: 48px;
+  line-height: 48px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0.4em;
+}
+.flip a .front {
+  background-color: #000000;
+  color: #fff;
+  -webkit-transform: rotateY(0) translateZ(24px);
+  -moz-transform: rotateY(0) translateZ(24px);
+  -o-transform: rotateY(0) translateZ(24px);
+  -ms-transform: rotateY(0) translateZ(24px);
+  transform: rotateY(0) translateZ(24px);
+}
+.flip a .back {
+  background-color: rgba(255,255,255,0);
+  color: rgba(34,34,34,0);
+  -webkit-transform: rotateX(90deg) translateZ(24px);
+  -moz-transform: rotateX(90deg) translateZ(24px);
+  -o-transform: rotateX(90deg) translateZ(24px);
+  -ms-transform: rotateX(90deg) translateZ(24px);
+  transform: rotateX(90deg) translateZ(24px);
+  overflow: hidden;
+}
+.flip a .back:after {
+  content: '';
+  position: absolute;
+  top: -32%;
+  left: -10%;
+  width: 120%;
+  height: 50%;
+  background: #000000;
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.15s;
+  -moz-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  -ms-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.flip a:hover {
+  -webkit-transform: translateZ(-24px) rotateX(-90deg);
+  -moz-transform: translateZ(-24px) rotateX(-90deg);
+  -o-transform: translateZ(-24px) rotateX(-90deg);
+  -ms-transform: translateZ(-24px) rotateX(-90deg);
+  transform: translateZ(-24px) rotateX(-90deg);
+}
+.flip a:hover .front {
+  background: #000;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.flip a:hover .back {
+  color: #222;
+  -webkit-transition: color 0.4s linear;
+  -moz-transition: color 0.4s linear;
+  -o-transition: color 0.4s linear;
+  -ms-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+  background: #fff;
+}
+.flip a:hover .back:after {
+  -webkit-transform: rotate(6deg) translate(100px, -18px);
+  -moz-transform: rotate(6deg) translate(100px, -18px);
+  -o-transform: rotate(6deg) translate(100px, -18px);
+  -ms-transform: rotate(6deg) translate(100px, -18px);
+  transform: rotate(6deg) translate(100px, -18px);
+}
+</style>
+<style>
+body {
+	cursor: url('curs.cur'), auto;
+}
+</style>
+<title behavior="scroll" direction="left" bgcolor="#93d5f9" width="300" height="20" scrolldelay="100"
+
+loop="infinite">x.x.x</title>
+
+<script type="text/javascript">
+<!--
+var message = "CarryLove";
+var message = message+" ";
+i="0";
+var temptitle="";
+var speed="450";
+function titler() {
+if (!document.all&&!document.getElementById) return;
+document.title=temptitle+message.charAt(i);
+temptitle=temptitle+message.charAt(i);
+i++;
+if(i==message.length) {
+i="0";
+temptitle="";
+}
+setTimeout("titler()",speed);
+}
+window.onload=titler;
+</script>
+</head>
+<body bgcolor="black">
+<p align="center">
+<script>
+document.oncontextmenu = cmenu; function cmenu() { return false; }
+</script>
+<script>
+function preventSelection(element){
+  var preventSelection = false;
+  function addHandler(element, event, handler){
+  if (element.attachEvent) element.attachEvent('on' + event, handler);
+  else if (element.addEventListener) element.addEventListener(event, handler, false);  }
+  function removeSelection(){
+  if (window.getSelection) { window.getSelection().removeAllRanges(); }
+  else if (document.selection && document.selection.clear)
+  document.selection.clear();
+  }
+
+  addHandler(element, 'mousemove', function(){ if(preventSelection) removeSelection(); });
+  addHandler(element, 'mousedown', function(event){ var event = event || window.event; var sender = event.target || event.srcElement; preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i) ;});
+
+  function killCtrlA(event){
+  var event = event || window.event;
+  var sender = event.target || event.srcElement;
+  if (sender.tagName.match(/INPUT|TEXTAREA/i)) return;
+  var key = event.keyCode || event.which;
+  if ((event.ctrlKey && key == 'U'.charCodeAt(0)) || (event.ctrlKey && key == 'A'.charCodeAt(0)) || (event.ctrlKey && key == 'S'.charCodeAt(0)))  // 'A'.charCodeAt(0) можно заменить на 65
+  { removeSelection();
+  if (event.preventDefault) event.preventDefault();
+  else event.returnValue = false;}}
+  addHandler(element, 'keydown', killCtrlA);
+  addHandler(element, 'keyup', killCtrlA);
+}
+preventSelection(document);
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font color="white" size="12" face="comic sans ms">CarryLove</font>
+<br>
+<br>
+<br>
+<br>
+<script type="text/javascript">
+setInterval(function () {
+ date = new Date(),
+ h = date.getHours(),
+ m = date.getMinutes(),
+ s = date.getSeconds(),
+ h = (h < 10) ? '0' + h : h,
+ m = (m < 10) ? '0' + m : m,
+ s = (s < 10) ? '0' + s : s,
+ document.getElementById('time').innerHTML = h + ':' + m + ':' + s;
+}, 1000);
+</script>
+<font face="comic sans ms"
+<span style="color:white; font-size:18pt; padding:5px;">
+<span id="time">00:00:00</span>
+</span>
+<br>
+<div class="flip">
+    <a href="https://vk.com/mrphp" target="_blank">
+        <div class="front">VK</div>
+        <div class="back">CLICK</div>
+  </a>
+</div>
+<br>
+<br>
+<br>
+</font>
+<script>
+var audio = {};
+
+function startAudio(url) {
+  if("pause" in audio) audio.pause();
+
+  audio = new Audio(url);
+  audio.play();
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="center">
+<font face="comic sans ms">
+<a href="#" onclick="startAudio('https://all-mp3.net/files/ru_mp3/Pesnya_-_Vladimir_putin_molodets.mp3'); return false; " style="text-decoration: none; color: white; font-size:24px">Play</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</font>
+</p>
+</body>
+</html>
