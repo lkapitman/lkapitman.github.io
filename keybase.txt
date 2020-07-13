@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/carrylove
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lkapitman.github.io
+  * I am carrylove (https://keybase.io/carrylove) on keybase.
+  * I have a public key ASCLYGk8HbXZ_45qYxzPQomx8rqBORAM4E5D2XMkTJCAYQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208b60693c1db5d9ff8e6a631ccf4289b1f2ba8139100ce04e43d973244c9080610a",
+      "host": "keybase.io",
+      "kid": "01208b60693c1db5d9ff8e6a631ccf4289b1f2ba8139100ce04e43d973244c9080610a",
+      "uid": "8dfbf76a08669cab27a021e287f0f519",
+      "username": "carrylove"
+    },
+    "merkle_root": {
+      "ctime": 1594664416,
+      "hash": "b16cb87dc77c94f8a858a9047644701db6a9b084c4bd35d6bcf2b055e02e6724683220de019c67918be248440a45ca33534f5571612324414eb13722f7623a1d",
+      "hash_meta": "d36e16edbe66d8d869ea482f015982ed049423b9157e7a58dd6f364e2bdfe37d",
+      "seqno": 16959318
+    },
+    "service": {
+      "entropy": "qKYobajjPY9NwonCFCbl2okb",
+      "hostname": "lkapitman.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1594664560,
+  "expire_in": 504576000,
+  "prev": "0f8728ea4a63323b827264a3c91880be1c53afd3e8cc7c8f52335f1948784ca3",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgi2BpPB212f+OamMcz0KJsfK6gTkQDOBOQ9lzJEyQgGEKp3BheWxvYWTESpcCB8QgD4co6kpjMjuCcmSjyRiAvhxTr9PozHyPUjNfGUh4TKPEIGwykDH3kzxib0YIOwWGjwaJG014fHvsYE90LYIf7iBlAgHCo3NpZ8RAIwkeokSZ8WZBEqgITwn7QvUI/ZYa/+rLswY7Q+caOAcKwnRB3dYnThmkepNB7Qw5MEtupoOmlC9LQPiGvUDwDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO5FfxKYmRsKP4p1bh8GzWG6vsMpfWxoqp2PG7VRX3Bqo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/carrylove
+
+==================================================================
